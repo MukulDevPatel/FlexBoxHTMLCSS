@@ -1,0 +1,67 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+   box-sizing: border-box; 
+  }
+  body {
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+  }
+  #main > article {
+    flex: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    background: beige;
+  }
+  #main > nav {
+    order: -1;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+</style>
+<body>
+  <header>Header</header>
+  <div id="main">
+    <article>
+        <h2>First Article</h2>
+        <p>
+            Working together to keep the tech employability of engineers alive and accessible,
+            so Tech Companies worldwide can get contributors and creators for technology solutions.
+            We believe this act of human collabration accross an employability platform is essential
+            to individual growth and our collective future.
+        </p>
+    </article>
+    <article>
+        <h2>Second Article</h2>
+        <p>
+            Working together to keep the tech employability of engineers alive and accessible,
+            so Tech Companies worldwide can get contributors and creators for technology solutions.
+            We believe this act of human collabration accross an employability platform is essential
+            to individual growth and our collective future.
+        </p>
+    </article>
+    <article>
+        <h2>Third Article</h2>
+        <p>
+            Working together to keep the tech employability of engineers alive and accessible,
+            so Tech Companies worldwide can get contributors and creators for technology solutions.
+            We believe this act of human collabration accross an employability platform is essential
+            to individual growth and our collective future.
+        </p>
+    </article>
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
